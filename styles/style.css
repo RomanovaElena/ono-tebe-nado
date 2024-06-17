@@ -1,1 +1,81 @@
-/* место для вашего кода */
+html {
+  background: dimgrey;
+}
+
+body {
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  color: #000;
+  background: white;
+}
+
+/* HEADER STYLES */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 148px 1fr;
+  margin: 92px 24px 96px;
+}
+
+.header__menu {
+  padding: 44px 36px 39px 27px;
+  align-self: center;
+}
+
+.header__menu-list {
+  display: flex;
+  gap: 28px;
+  list-style: circle;
+  list-style-position: outside;
+}
+
+.header__menu-link {
+  font-size: 18px;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+
+.header__menu-item {
+  padding-left: 3px;
+  /* text-underline-offset: 4px; */
+}
+
+.header__menu-item_active {
+  list-style: none;
+}
+
+.header__menu-item_active .header__menu-link {
+  /* text-decoration: none; */
+  border-bottom: none;
+}
+
+.header__logo-image {
+  padding-left: 4px;
+  width: 148px;
+}
+
+.header__contacts{
+  padding: 5px 25px 2px 185px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.header__contacts-item{
+  display: inline;
+  font-size: 18px;
+  /* line-height: 1.35; */
+  /* width: 132px; */
+  /* text-underline-offset: 3px; */
+  text-decoration: none;
+  font-style: normal;
+
+  border-bottom: 1px solid #000;
+}
+
+.header__contacts-address{
+  font-size: 18px;
+  line-height: 1.35;
+  font-style: normal;
+  text-decoration: none;
+}
