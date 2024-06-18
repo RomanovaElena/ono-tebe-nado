@@ -47,6 +47,8 @@ body {
   border-bottom: none;
 }
 
+/* TO-DO: разобраться с изображениями, блоком адреса */
+
 .header__logo {
   display: block;
   width: 148px;
@@ -76,4 +78,98 @@ body {
   line-height: 1.35;
   font-style: normal;
   text-decoration: none;
+}
+
+/* COVER STYLES */
+/* TO-DO: выровнять изображение фона, проверить word-spacing у h2 */
+
+.cover {
+  position: relative;
+  padding: 165px 50px 51px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -140px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background: rgb(0 0 0/.6);
+  /* следить! ----------------------------------------------------*/
+  z-index: 0;
+}
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 100px;
+  letter-spacing: 0.3em;
+  color: #fff;
+   /* следить! ----------------------------------------------------*/
+   z-index: 1;
+   margin-bottom: 135px;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.aligned-text {
+  display: inline;
+  line-height: 1.15;
+}
+
+.aligned-text_center {
+  text-align: center;
+  padding-right: 30px;
+  line-height: 1;
+}
+
+.aligned-text_right {
+  text-align: right;
+  line-height: 1;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* следить! ----------------------------------------------------*/
+  z-index: 1;
+}
+
+.cover__description-text {
+  font-size: 22px;
+  line-height: 1.27;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  /* letter-spacing: 1.1em; */
+  margin-right: 77px;
+  word-spacing: 0.8em;
+}
+
+.bet-button {
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;  
+  border: 1px solid #fff;
+  width: 256px;
+  height: 51px;
+  background: transparent;
 }
