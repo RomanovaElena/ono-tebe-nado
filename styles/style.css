@@ -1,12 +1,7 @@
-html {
-  background: dimgrey;
-}
-
 body {
   font-family: Raleway, sans-serif;
   font-weight: 400;
   color: #000;
-  background: white;
 }
 
 /* HEADER STYLES */
@@ -14,23 +9,22 @@ body {
 .header {
   display: grid;
   grid-template-columns: 1fr 148px 1fr;
-  margin: 92px 24px 96px;
+  margin: 92px 24px 95px;
 }
 
 .header__menu {
-  padding: 44px 36px 39px 27px;
-  align-self: center;
+  padding: 44px 39px 39px 26px;
 }
 
 .header__links-list {
   display: flex;
-  gap: 28px;
+  gap: 29px;
   list-style: circle;
   list-style-position: outside;
 }
 
 .header__links-list-item {
-  padding-left: 3px;
+  padding-left: 2px;
 }
 
 .header__links-list-item_no-bullit {
@@ -47,26 +41,26 @@ body {
   border-bottom: none;
 }
 
-/* TO-DO: разобраться с изображениями, блоком адреса */
-
 .header__logo {
-  display: block;
   width: 148px;
+  height: 105px;
 }
 
 .header__logo-image {
-  padding-left: 4px;
+  width: 100%;
+  height: 100%;
 }
 
 .header__address {
-  padding: 5px 25px 2px 185px;
+  padding: 5px 25px 2px 186px;
   display: flex;
   flex-direction: column;
-  align-self: center;
+  justify-content: space-between;
+  gap: 1px;
+  line-height: 1.35;
 }
 
 .header__contacts-item {
-  display: inline;
   font-size: 18px;
   text-decoration: none;
   font-style: normal;
@@ -74,14 +68,13 @@ body {
 }
 
 .header__contacts-address {
+  margin-top: -1px;
   font-size: 18px;
-  line-height: 1.35;
   font-style: normal;
   text-decoration: none;
 }
 
 /* COVER STYLES */
-/* TO-DO: выровнять изображение фона, проверить word-spacing у h2 */
 
 .cover {
   position: relative;
@@ -89,7 +82,6 @@ body {
   background-image: url(../images/cover.png);
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-position: -140px 0; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -128,13 +120,11 @@ body {
 }
 
 .aligned-text {
-  display: inline;
   line-height: 1.15;
 }
 
 .aligned-text_center {
   text-align: center;
-  padding-right: 30px;
   line-height: 1;
 }
 
@@ -157,7 +147,6 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   color: #fff;
-  /* letter-spacing: 1.1em; */
   margin-right: 77px;
   word-spacing: 0.8em;
 }
@@ -167,7 +156,7 @@ body {
   font-size: 22px;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;  
+  color: #fff;
   border: 1px solid #fff;
   width: 256px;
   height: 51px;
@@ -177,7 +166,7 @@ body {
 /* LOTS STYLES */
 
 .lots {
-  margin: 179px 24px 146px;
+  margin: 180px 24px 146px;
   display: flex;
   flex-direction: column;
 }
@@ -192,11 +181,15 @@ body {
 
 .lots__card-list {
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
   gap: 25px;
   list-style-type: none;
   margin-bottom: 30px;
+  flex-wrap:wrap;
+}
+
+.lots__card-list-item {
+  flex-grow: 1;
+  flex-basis: 334px;
 }
 
 .card {
@@ -204,8 +197,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  padding: 48px 40px;
-  width: 334px;
+  padding: 49px 40px;
   height: 100%;
   text-overflow: ellipsis;
   background-size: cover;
@@ -231,6 +223,7 @@ body {
   line-height: 1.2;
   text-transform: uppercase;
   text-decoration: underline;
+  text-underline-offset: 2px;
   color: #fff;
   z-index: 1;
 }
@@ -250,3 +243,116 @@ body {
   border-bottom: 1px solid #000;
 }
 
+/* ABOUT STYLES */
+
+.about {
+  margin: 146px 24px 179px;
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  gap: 25px;
+}
+
+.about__logo {
+  display: flex;
+  justify-self: center;
+  justify-content: center; 
+  width: 240px;
+  height: 240px;
+  border-radius: 120px;
+  background-color: #000;
+  margin-top: 35px;
+  /*TO-DO: как еще выровнять логотип?.......................................*/
+  /* margin-left: 47px; */
+}
+
+.about__logo-image {
+  width: 148px;
+}
+
+.about__column {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 26px;
+  grid-column-start: 2;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-top: 133px;
+  margin-bottom: 76px;
+  /* margin-bottom: 101px; добавить еще div?...................................*/
+}
+
+.about__text {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/* FOOTER STYLES */
+
+.footer {
+  margin: 0 50px 91px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  line-height: 1.35;
+  gap: 1px;
+}
+
+.footer__contacts-item {
+  display: inline-block;
+  font-size: 18px;
+  text-decoration: none;
+  font-style: normal;
+  border-bottom: 1px solid #000;
+  margin-bottom: -3px;
+}
+
+.footer__contacts-address {
+  margin-top: 2px;
+  font-size: 18px;
+  line-height: 1.35;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.footer__menu-link_active {
+  list-style: none;
+}
+
+.footer__menu-link {
+  font-size: 18px;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+
+.footer__menu-link_active .footer__menu-link {
+  border-bottom: none;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+  list-style-type: none;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
+}
