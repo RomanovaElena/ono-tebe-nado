@@ -1,7 +1,7 @@
 body {
+  color: #000;
   font-family: Raleway, sans-serif;
   font-weight: 400;
-  color: #000;
 }
 
 /* Стили блока HEADER */
@@ -32,9 +32,9 @@ body {
 }
 
 .header__link {
+  border-bottom: 1px solid #000;
   font-size: 18px;
   text-decoration: none;
-  border-bottom: 1px solid #000;
 }
 
 .header__links-list-item_no-bullit .header__link {
@@ -52,19 +52,19 @@ body {
 }
 
 .header__address {
-  padding: 5px 25px 2px 186px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 1px;
+  padding: 5px 25px 2px 186px;
   line-height: 1.35;
 }
 
 .header__contacts-item {
-  font-size: 18px;
-  text-decoration: none;
-  font-style: normal;
   border-bottom: 1px solid #000;
+  font-size: 18px;
+  font-style: normal;
+  text-decoration: none;
 }
 
 .header__contacts-address {
@@ -78,34 +78,34 @@ body {
 
 .cover {
   position: relative;
-  padding: 165px 50px 51px;
-  background-image: url(../images/cover.png);
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 165px 50px 51px;
+  background-image: url(../images/cover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .overlay {
   position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-  inset: 0;
   background: rgb(0 0 0/0.6);
 }
 
 .cover__title {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  text-transform: uppercase;
+  margin-bottom: 135px;
+  color: #fff;
   font-weight: 700;
   font-size: 100px;
   letter-spacing: 0.3em;
-  color: #fff;
-  z-index: 1;
-  margin-bottom: 135px;
+  text-transform: uppercase;
 }
 
 .aligned-text {
@@ -113,13 +113,13 @@ body {
 }
 
 .aligned-text_center {
-  text-align: center;
   line-height: 1;
+  text-align: center;
 }
 
 .aligned-text_right {
-  text-align: right;
   line-height: 1;
+  text-align: right;
 }
 
 .letter-spacing-extended {
@@ -131,40 +131,40 @@ body {
 }
 
 .cover__description {
+  z-index: 1;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  z-index: 1;
 }
 
 .cover__description-text {
+  margin-right: 77px;
+  color: #fff;
+  font-weight: 400;
   font-size: 22px;
   line-height: 1.27;
-  font-weight: 400;
   text-transform: uppercase;
-  color: #fff;
-  margin-right: 77px;
   word-spacing: 0.8em;
 }
 
 .bet-button {
-  font-weight: 500;
-  font-size: 22px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
-  border: 1px solid #fff;
   width: 256px;
   height: 51px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
   background: transparent;
 }
 
 /* Стили блока LOTS */
 
 .lots {
-  margin: 180px 24px 146px;
   display: flex;
   flex-direction: column;
+  margin: 180px 24px 146px;
 }
 
 .lots__heading {
@@ -177,10 +177,10 @@ body {
 
 .lots__card-list {
   display: flex;
-  gap: 25px;
-  list-style-type: none;
-  margin-bottom: 30px;
   flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 30px;
+  list-style-type: none;
 }
 
 .lots__card-list-item {
@@ -189,16 +189,16 @@ body {
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
-  padding: 49px 40px;
   height: 100%;
+  padding: 49px 40px;
   text-overflow: ellipsis;
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .card_type_film {
@@ -214,38 +214,38 @@ body {
 }
 
 .card__title {
+  z-index: 1;
+  color: #fff;
   font-weight: 700;
   font-size: 22px;
   line-height: 1.2;
-  text-transform: uppercase;
   text-decoration: underline;
   text-underline-offset: 2px;
-  color: #fff;
-  z-index: 1;
+  text-transform: uppercase;
 }
 
 .card__text {
+  z-index: 1;
+  color: #fff;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.2;
-  color: #fff;
-  z-index: 1;
 }
 
 .lots__look-more-link {
   margin-left: 40px;
+  border-bottom: 1px solid #000;
   font-size: 20px;
   text-decoration: none;
-  border-bottom: 1px solid #000;
 }
 
 /* Стили блока ABOUT */
 
 .about {
-  margin: 146px 24px 179px;
   display: grid;
   grid-template-columns: 334px 1fr;
   gap: 25px;
+  margin: 146px 24px 179px;
 }
 
 .about__logo {
@@ -254,9 +254,9 @@ body {
   justify-content: center;
   width: 240px;
   height: 240px;
+  margin-top: 35px;
   border-radius: 120px;
   background-color: #000;
-  margin-top: 35px;
 }
 
 .about__logo-image {
@@ -266,17 +266,17 @@ body {
 .about__column {
   display: flex;
   flex-direction: column;
+  grid-column-start: 2;
   align-items: start;
   gap: 26px;
-  grid-column-start: 2;
 }
 
 .about__title {
+  margin-top: 133px;
+  margin-bottom: 76px;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
-  margin-top: 133px;
-  margin-bottom: 76px;
 }
 
 .about__text {
@@ -287,9 +287,9 @@ body {
 /* Стили блока FOOTER */
 
 .footer {
-  margin: 0 50px 91px;
   display: flex;
   justify-content: space-between;
+  margin: 0 50px 91px;
 }
 
 .footer__address {
@@ -301,18 +301,18 @@ body {
 
 .footer__contacts-item {
   display: inline-block;
-  font-size: 18px;
-  text-decoration: none;
-  font-style: normal;
-  border-bottom: 1px solid #000;
   margin-bottom: -3px;
+  border-bottom: 1px solid #000;
+  font-size: 18px;
+  font-style: normal;
+  text-decoration: none;
 }
 
 .footer__contacts-address {
   margin-top: 2px;
   font-size: 18px;
-  line-height: 1.35;
   font-style: normal;
+  line-height: 1.35;
   text-decoration: none;
 }
 
@@ -328,8 +328,8 @@ body {
 }
 
 .footer__menu-link {
-  text-decoration: none;
   border-bottom: 1px solid #000;
+  text-decoration: none;
 }
 
 .footer__menu-link_active .footer__menu-link {
